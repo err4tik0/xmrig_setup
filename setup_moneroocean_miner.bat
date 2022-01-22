@@ -126,7 +126,6 @@ echo.
 echo JFYI: This host has %NUMBER_OF_PROCESSORS% CPU threads, so projected Monero hashrate is around %EXP_MONERO_HASHRATE% KH/s.
 echo.
 
-pause
 
 rem start doing stuff: preparing miner
 
