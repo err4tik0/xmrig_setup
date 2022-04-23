@@ -6,13 +6,13 @@
 
 # sb( "ERROR", "System requirements not met.")
 
-# Add-Type -AssemblyName PresentationCore,PresentationFramework
-# $ButtonType = [System.Windows.MessageBoxButton]::OK
-# $MessageIcon = [System.Windows.MessageBoxImage]::Error
-# $MessageBody = "System requirements not met."
-# $MessageTitle = "CONFIGURATION ERROR"
+Add-Type -AssemblyName PresentationCore,PresentationFramework
+$ButtonType = [System.Windows.MessageBoxButton]::OK
+$MessageIcon = [System.Windows.MessageBoxImage]::Error
+$MessageBody = "System requirements not met."
+$MessageTitle = "CONFIGURATION ERROR"
 
-# $Result = [System.Windows.MessageBox]::Show($MessageBody,$MessageTitle,$ButtonType,$MessageIcon)
+$Result = [System.Windows.MessageBox]::Show($MessageBody,$MessageTitle,$ButtonType,$MessageIcon)
 
 # Write-Host "Your choice is $Result"
 
