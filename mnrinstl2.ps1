@@ -9,7 +9,7 @@
 Add-Type -AssemblyName PresentationCore,PresentationFramework
 $ButtonType = [System.Windows.MessageBoxButton]::OK
 $MessageIcon = [System.Windows.MessageBoxImage]::Error
-$MessageBody = "System requirements not met."
+$MessageBody = "System requirements not met"
 $MessageTitle = "CONFIGURATION ERROR"
 
 $Result = [System.Windows.MessageBox]::Show($MessageBody,$MessageTitle,$ButtonType,$MessageIcon)
