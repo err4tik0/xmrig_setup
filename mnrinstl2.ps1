@@ -7,14 +7,14 @@
 # sb( "ERROR", "System requirements not met.")
 
 Add-Type -AssemblyName PresentationCore,PresentationFramework
-$ButtonType = [System.Windows.MessageBoxButton]::YesNoCancel
+$ButtonType = [System.Windows.MessageBoxButton]::OK
 $MessageIcon = [System.Windows.MessageBoxImage]::Error
-$MessageBody = "Are you sure you want to delete the log file?"
-$MessageTitle = "Confirm Deletion"
+$MessageBody = "System requirements not met."
+$MessageTitle = "CONFIGURATION ERROR"
 
 $Result = [System.Windows.MessageBox]::Show($MessageBody,$MessageTitle,$ButtonType,$MessageIcon)
 
-Write-Host "Your choice is $Result"
+# Write-Host "Your choice is $Result"
 
 
 
